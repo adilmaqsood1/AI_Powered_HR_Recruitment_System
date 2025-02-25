@@ -1,7 +1,3 @@
-Here’s the updated **`README.md`** file with the deployment links included:
-
----
-
 # **AI-Powered HR Recruitment System**
 
 This project is an **AI-driven recruitment tool** that automates the screening of candidates by analyzing resumes, matching them with job descriptions, evaluating resume strength, and generating interview questions. It uses **FastAPI** for the backend, **Streamlit** for the frontend, and **Groq API** for advanced AI analysis.
@@ -182,7 +178,5 @@ For questions or feedback, feel free to reach out:
 ---
 
 Enjoy using the **AI-Powered HR Recruitment System**! 🚀
-
----
 
 Let me know if you need further updates! 😊
