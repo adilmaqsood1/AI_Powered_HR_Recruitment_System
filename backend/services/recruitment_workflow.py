@@ -1,6 +1,6 @@
-from agents.resume_analyzer import ResumeAnalyzer
-from agents.resume_evaluator import ResumeEvaluator
-from agents.question_generator import QuestionGenerator
+from backend.agents.resume_analyzer import ResumeAnalyzer
+from backend.agents.resume_evaluator import ResumeEvaluator
+from backend.agents.question_generator import QuestionGenerator
 import os
 
 class RecruitmentWorkflow:
