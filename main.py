@@ -1,6 +1,6 @@
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from typing import Optional
-from services.recruitment_workflow import RecruitmentWorkflow
+from backend.services.recruitment_workflow import RecruitmentWorkflow
 from pdf2image import convert_from_bytes
 from pytesseract import image_to_string
 import tempfile
