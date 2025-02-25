@@ -22,7 +22,7 @@ if st.button("Analyze Resume"):
         }
 
         # Send request to FastAPI
-        response = requests.post("http://localhost:8000/analyze", files=files, data=data)
+        response = requests.post("https://obliged-wandis-aditech-18661c81.koyeb.app/analyze", files=files, data=data)
 
         if response.status_code == 200:
             result = response.json()["data"]
