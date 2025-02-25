@@ -13,6 +13,7 @@ from langchain.document_loaders import PyPDFLoader
 # Load environment variables
 load_dotenv()
 
+
 # Initialize FastAPI
 app = FastAPI()
 
