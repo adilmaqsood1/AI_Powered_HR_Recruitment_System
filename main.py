@@ -7,8 +7,11 @@ from pydantic import BaseModel
 from dotenv import load_dotenv
 from loguru import logger
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
+from fastapi.responses import StreamingResponse
 from backend.services.recruitment_workflow import RecruitmentWorkflow
-from langchain.document_loaders import PyPDFLoader
+from backend.services.streaming_workflow import StreamingRecruitmentWorkflow
+from langchain_community.document_loaders import PyPDFLoader
+from fastapi.middleware.cors import CORSMiddleware
 
 # Load environment variables
 load_dotenv()
@@ -16,6 +19,17 @@ load_dotenv()
 
 # Initialize FastAPI
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Change to specific frontend URL for security
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+# Import and include API router
+from backend.routes import api_router
+app.include_router(api_router)
 
 # Define request schema
 class RecruitmentRequest(BaseModel):
@@ -55,7 +69,6 @@ def extract_text_from_pdf(file: UploadFile):
     except Exception as e:
         logger.error(f"PDF Extraction Error: {e}")
         raise HTTPException(status_code=400, detail=f"Failed to extract text from PDF: {e}")
-
 @app.get("/")
 def read_root():
     return {"message": "welcome to the AI-Powered HR Recruitment System!"}
@@ -87,4 +100,36 @@ async def analyze_candidate(
         )
         return {"status": "success", "data": result}
     except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/analyze/stream")
+async def stream_analyze_candidate(
+    job_title: str = Form(...),
+    job_description: str = Form(...),
+    resume_file: UploadFile = File(...),
+    cover_letter: Optional[str] = Form(None)
+):
+    workflow = StreamingRecruitmentWorkflow()
+    
+    try:
+        # Extract text from the uploaded file
+        if resume_file.content_type == "application/pdf":
+            resume_text = extract_text_from_pdf(resume_file)
+        elif resume_file.content_type == "text/plain":
+            resume_text = resume_file.file.read().decode("utf-8")
+        else:
+            raise HTTPException(status_code=400, detail="Unsupported file type. Please upload a PDF or TXT file.")
+        
+        # Create a streaming response using the streaming workflow
+        return StreamingResponse(
+            workflow.run_streaming(
+                job_title=job_title,
+                job_description=job_description,
+                resume_text=resume_text,
+                cover_letter=cover_letter
+            ),
+            media_type="application/json"
+        )
+    except Exception as e:
+        logger.error(f"Streaming error: {e}")
         raise HTTPException(status_code=500, detail=str(e))

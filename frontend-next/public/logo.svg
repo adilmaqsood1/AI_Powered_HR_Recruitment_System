@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <rect width="50" height="50" x="5" y="5" rx="5" fill="#4f46e5" />
+  <text x="65" y="38" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#4f46e5">HR Recruit</text>
+  <path d="M20 15 L20 45 M20 30 L35 30 M40 15 L40 45" stroke="white" stroke-width="4" />
+</svg>
