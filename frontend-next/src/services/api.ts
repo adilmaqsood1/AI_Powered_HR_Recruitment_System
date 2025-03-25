@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // API base URL - update this to your deployed backend URL or use environment variable
-const API_URL = 'http://127.0.0.1:8000';
+const API_URL = 'https://aipoweredhrrecruitmentsystem-production.up.railway.app/';
 
 /**
  * Register a new user
