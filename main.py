@@ -1,5 +1,6 @@
 import tempfile
 import os
+import uvicorn
 from typing import Optional
 from pdf2image import convert_from_bytes
 from pytesseract import image_to_string
