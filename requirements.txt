@@ -1,5 +1,9 @@
 aiofiles
 aiohappyeyeballs
+psycopg2-binary
+aiohttp-sse-client
+aiohttp-socks
+aiohttp_cors
 aiohttp
 aiosignal
 aiosqlite
