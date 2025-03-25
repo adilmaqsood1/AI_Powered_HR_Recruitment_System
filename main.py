@@ -133,3 +133,9 @@ async def stream_analyze_candidate(
     except Exception as e:
         logger.error(f"Streaming error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+    
+
+
+if __name__ == "__main__":
+    port = int(os.getenv("PORT", 8000))  
+    uvicorn.run(app, host="0.0.0.0", port=port)
