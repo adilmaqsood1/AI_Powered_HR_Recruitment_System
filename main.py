@@ -10,8 +10,8 @@ from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.responses import StreamingResponse
 from backend.services.recruitment_workflow import RecruitmentWorkflow
 from backend.services.streaming_workflow import StreamingRecruitmentWorkflow
-from langchain_community.document_loaders import PyPDFLoader
 from fastapi.middleware.cors import CORSMiddleware
+from langchain_community.document_loaders import PyPDFLoader
 
 # Load environment variables
 load_dotenv()
